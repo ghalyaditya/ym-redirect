@@ -4,7 +4,7 @@ setTimeout(() => {
     let r = doc.lastChild.getElementsByClassName('title');
     if (r.length) {
         r = r[0];
-        r.innerText = window.ymConfig.payload;
+        r.innerText = window.ymConfig.payload.university;
     }
 }, 2000);
 
