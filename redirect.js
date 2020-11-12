@@ -1,3 +1,13 @@
+setTimeout(() => {
+    let doc = document.getElementById('ymIframe');
+    doc = doc.contentDocument || doc.contentWindow;
+    let r = doc.lastChild.getElementsByClassName('title');
+    if (r.length) {
+        r = r[0];
+        r.innerText = window.ymConfig.payload;
+    }
+}, 2000);
+
 window.addEventListener('message', function (eventData) {
     try {
         if (JSON.parse(eventData.data)) {
