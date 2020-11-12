@@ -3,7 +3,6 @@ setTimeout(() => {
     doc = doc.contentDocument || doc.contentWindow;
     let r = doc.lastChild.getElementsByClassName('title');
     if (r.length) {
-        // let payload = JSON.parse(window.ymConfig.payload);
         r = r[0];
         r.innerText = window.ymConfig.payload.university;
     }
