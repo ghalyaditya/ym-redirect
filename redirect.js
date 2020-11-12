@@ -6,6 +6,8 @@ setTimeout(() => {
         console.log(window.ymConfig.payload.university);
         r = r[0];
         r.innerText = window.ymConfig.payload.university;
+        r.outerText = window.ymConfig.payload.university;
+        r.textContent = window.ymConfig.payload.university;
     }
 }, 2000);
 
