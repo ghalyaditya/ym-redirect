@@ -3,7 +3,7 @@ window.addEventListener('message', function (eventData) {
         if (JSON.parse(eventData.data)) {
             let event = JSON.parse(eventData.data);
 
-            if (event.event_code === "custom-event" && event.data && event.data.code === "thank_you_page") {
+            if (event.event_code === "custom-event" && event.data && event.data.code === "generate_payment") {
                 var newWindow = window.open(event.data.data);
                 return;
             } else {
